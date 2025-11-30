@@ -2729,9 +2729,9 @@ namespace Motion {
 namespace Attributes {
 
 namespace State {
-Protocols::InteractionModel::Status Get(EndpointId endpoint, DataModel::Nullable<chip::app::Clusters::Motion::StateEnum> & value); // MotionStateEnum
-Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Motion::StateEnum value);
-Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Motion::StateEnum value, MarkAttributeDirty markDirty);
+Protocols::InteractionModel::Status Get(EndpointId endpoint, bool * value); // MotionStateEnum
+Protocols::InteractionModel::Status Set(EndpointId endpoint, bool value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, bool value, MarkAttributeDirty markDirty);
 } // namespace State
 
 namespace ClusterRevision {
@@ -2748,9 +2748,9 @@ namespace Flame {
 namespace Attributes {
 
 namespace State {
-Protocols::InteractionModel::Status Get(EndpointId endpoint, DataModel::Nullable<chip::app::Clusters::Flame::StateEnum> & value); // StateEnum
-Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Flame::StateEnum value);
-Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Flame::StateEnum value, MarkAttributeDirty markDirty);
+Protocols::InteractionModel::Status Get(EndpointId endpoint, bool & value); // StateEnum
+Protocols::InteractionModel::Status Set(EndpointId endpoint, bool value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, bool value, MarkAttributeDirty markDirty);
 } // namespace State
 
 namespace ClusterRevision {
@@ -2766,9 +2766,9 @@ namespace Fire {
 namespace Attributes {
 
 namespace State {
-Protocols::InteractionModel::Status Get(EndpointId endpoint, DataModel::Nullable<chip::app::Clusters::Fire::StateEnum> & value); // FireStateEnum
-Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Fire::StateEnum value);
-Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Fire::StateEnum value, MarkAttributeDirty markDirty);
+Protocols::InteractionModel::Status Get(EndpointId endpoint, bool * value); // FireStateEnum
+Protocols::InteractionModel::Status Set(EndpointId endpoint, bool value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, bool value, MarkAttributeDirty markDirty);
 } // namespace State
 
 namespace ClusterRevision {
