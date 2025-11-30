@@ -583,7 +583,13 @@ void emberAfCarbonMonoxideConcentrationMeasurementClusterInitCallback(chip::Endp
 /**
  * @param endpoint    Endpoint that is being initialized
  */
-void emberAfCarbonDioxideConcentrationMeasurementClusterInitCallback(chip::EndpointId endpoint);
+void emberAfSmokeConcentrationMeasurementClusterInitCallback(chip::EndpointId endpoint);
+
+
+/**
+ * @param endpoint    Endpoint that is being initialized
+ */
+void emberAfLPGConcentrationMeasurementClusterInitCallback(chip::EndpointId endpoint);
 
 
 /**
