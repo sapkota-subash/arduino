@@ -301,6 +301,12 @@ static constexpr ClusterId Id = 0x0000040C;
 namespace CarbonDioxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x0000040D;
 } // namespace CarbonDioxideConcentrationMeasurement {
+namespace SmokeConcentrationMeasurement {
+static constexpr ClusterId Id = 0x0000040E;
+} // namespace SmokeConcentrationMeasurement {
+namespace LPGConcentrationMeasurement {
+static constexpr ClusterId Id = 0x0000040F;
+} // namespace LPGConcentrationMeasurement {
 namespace NitrogenDioxideConcentrationMeasurement {
 static constexpr ClusterId Id = 0x00000413;
 } // namespace NitrogenDioxideConcentrationMeasurement {
