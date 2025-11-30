@@ -81,6 +81,8 @@ void MatterFlowMeasurementPluginServerInitCallback();
 void MatterRelativeHumidityMeasurementPluginServerInitCallback();
 void MatterOccupancySensingPluginServerInitCallback();
 void MatterCarbonDioxideConcentrationMeasurementPluginServerInitCallback();
+void MatterSmokeConcentrationMeasurementPluginServerInitCallback();
+void MatterLPGConcentrationMeasurementPluginServerInitCallback();
 void MatterMediaPlaybackPluginServerInitCallback();
 void MatterKeypadInputPluginServerInitCallback();
 
