@@ -677,6 +677,14 @@
   { ZAP_EMPTY_DEFAULT(), 0x0000FFFC, 4, ZAP_TYPE(BITMAP32), ZAP_ATTRIBUTE_MASK(EXTERNAL_STORAGE) }, /* FeatureMap */  \
   { ZAP_SIMPLE_DEFAULT(3), 0x0000FFFD, 2, ZAP_TYPE(INT16U), 0 }, /* ClusterRevision */  \
 \
+  /* Endpoint: 2, Cluster: Smoke Concentration Measurement (server) */ \
+  { ZAP_EMPTY_DEFAULT(), 0x0000FFFC, 4, ZAP_TYPE(BITMAP32), ZAP_ATTRIBUTE_MASK(EXTERNAL_STORAGE) }, /* FeatureMap */  \
+  { ZAP_SIMPLE_DEFAULT(3), 0x0000FFFD, 2, ZAP_TYPE(INT16U), 0 }, /* ClusterRevision */  \
+\
+  /* Endpoint: 2, Cluster: LPG Concentration Measurement (server) */ \
+  { ZAP_EMPTY_DEFAULT(), 0x0000FFFC, 4, ZAP_TYPE(BITMAP32), ZAP_ATTRIBUTE_MASK(EXTERNAL_STORAGE) }, /* FeatureMap */  \
+  { ZAP_SIMPLE_DEFAULT(3), 0x0000FFFD, 2, ZAP_TYPE(INT16U), 0 }, /* ClusterRevision */  \
+\
   /* Endpoint: 2, Cluster: Media Playback (server) */ \
   { ZAP_EMPTY_DEFAULT(), 0x00000000, 1, ZAP_TYPE(ENUM8), 0 }, /* CurrentState */  \
   { ZAP_SIMPLE_DEFAULT(0), 0x0000FFFC, 4, ZAP_TYPE(BITMAP32), 0 }, /* FeatureMap */  \
@@ -1888,6 +1896,32 @@ const EmberAfGenericClusterFunction chipFuncArrayOccupancySensingServer[] = {\
   { \
       /* Endpoint: 2, Cluster: Carbon Dioxide Concentration Measurement (server) */ \
       .clusterId = 0x0000040D, \
+      .attributes = ZAP_ATTRIBUTE_INDEX(447), \
+      .attributeCount = 2, \
+      .clusterSize = 2, \
+      .mask = ZAP_CLUSTER_MASK(SERVER), \
+      .functions = NULL, \
+      .acceptedCommandList = nullptr, \
+      .generatedCommandList = nullptr, \
+      .eventList = nullptr, \
+      .eventCount = 0, \
+    },\
+  { \
+      /* Endpoint: 2, Cluster: Smoke Concentration Measurement (server) */ \
+      .clusterId = 0x0000040E, \
+      .attributes = ZAP_ATTRIBUTE_INDEX(447), \
+      .attributeCount = 2, \
+      .clusterSize = 2, \
+      .mask = ZAP_CLUSTER_MASK(SERVER), \
+      .functions = NULL, \
+      .acceptedCommandList = nullptr, \
+      .generatedCommandList = nullptr, \
+      .eventList = nullptr, \
+      .eventCount = 0, \
+    },\
+  { \
+      /* Endpoint: 2, Cluster: LPG Concentration Measurement (server) */ \
+      .clusterId = 0x0000040F, \
       .attributes = ZAP_ATTRIBUTE_INDEX(447), \
       .attributeCount = 2, \
       .clusterSize = 2, \
