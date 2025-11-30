@@ -5210,6 +5210,44 @@ kAverageMeasurement = 0x20,
 };
 } // namespace CarbonDioxideConcentrationMeasurement
 
+namespace SmokeConcentrationMeasurement {
+
+using LevelValueEnum = Clusters::detail::LevelValueEnum;
+
+using MeasurementMediumEnum = Clusters::detail::MeasurementMediumEnum;
+
+using MeasurementUnitEnum = Clusters::detail::MeasurementUnitEnum;
+
+// Bitmap for Feature
+enum class Feature : uint32_t {
+kNumericMeasurement = 0x1,
+kLevelIndication = 0x2,
+kMediumLevel = 0x4,
+kCriticalLevel = 0x8,
+kPeakMeasurement = 0x10,
+kAverageMeasurement = 0x20,
+};
+} // namespace SmokeConcentrationMeasurement
+
+namespace LPGConcentrationMeasurement {
+
+using LevelValueEnum = Clusters::detail::LevelValueEnum;
+
+using MeasurementMediumEnum = Clusters::detail::MeasurementMediumEnum;
+
+using MeasurementUnitEnum = Clusters::detail::MeasurementUnitEnum;
+
+// Bitmap for Feature
+enum class Feature : uint32_t {
+kNumericMeasurement = 0x1,
+kLevelIndication = 0x2,
+kMediumLevel = 0x4,
+kCriticalLevel = 0x8,
+kPeakMeasurement = 0x10,
+kAverageMeasurement = 0x20,
+};
+} // namespace LPGConcentrationMeasurement
+
 namespace NitrogenDioxideConcentrationMeasurement {
 
 using LevelValueEnum = Clusters::detail::LevelValueEnum;
