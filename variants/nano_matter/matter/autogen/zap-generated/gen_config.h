@@ -485,6 +485,18 @@
 #define MATTER_DM_PLUGIN_CARBON_DIOXIDE_CONCENTRATION_MEASUREMENT
 
 
+// Use this macro to check if the server side of the SMOKE Concentration Measurement cluster is included
+#define ZCL_USING_SMOKE_CONCENTRATION_MEASUREMENT_CLUSTER_SERVER
+#define MATTER_DM_PLUGIN_SMOKE_CONCENTRATION_MEASUREMENT_SERVER
+#define MATTER_DM_PLUGIN_SMOKE_CONCENTRATION_MEASUREMENT
+
+
+// Use this macro to check if the server side of the LPG Concentration Measurement cluster is included
+#define ZCL_USING_LPG_CONCENTRATION_MEASUREMENT_CLUSTER_SERVER
+#define MATTER_DM_PLUGIN_LPG_CONCENTRATION_MEASUREMENT_SERVER
+#define MATTER_DM_PLUGIN_LPG_CONCENTRATION_MEASUREMENT
+
+
 // Use this macro to check if the server side of the Media Playback cluster is included
 #define ZCL_USING_MEDIA_PLAYBACK_CLUSTER_SERVER
 #define MATTER_DM_PLUGIN_MEDIA_PLAYBACK_SERVER
