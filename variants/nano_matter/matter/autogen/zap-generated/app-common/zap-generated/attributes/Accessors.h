@@ -2724,6 +2724,62 @@ Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value, Mar
 } // namespace Attributes
 } // DoorLock
 
+
+namespace Motion {
+namespace Attributes {
+
+namespace State {
+Protocols::InteractionModel::Status Get(EndpointId endpoint, DataModel::Nullable<chip::app::Clusters::Motion::StateEnum> & value); // MotionStateEnum
+Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Motion::StateEnum value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Motion::StateEnum value, MarkAttributeDirty markDirty);
+} // namespace State
+
+namespace ClusterRevision {
+Protocols::InteractionModel::Status Get(EndpointId endpoint, uint16_t * value); // int16u
+Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value, MarkAttributeDirty markDirty);
+} // namespace ClusterRevision
+
+} // namespace Attributes
+} // Motion
+
+
+namespace Flame {
+namespace Attributes {
+
+namespace State {
+Protocols::InteractionModel::Status Get(EndpointId endpoint, DataModel::Nullable<chip::app::Clusters::Flame::StateEnum> & value); // StateEnum
+Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Flame::StateEnum value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Flame::StateEnum value, MarkAttributeDirty markDirty);
+} // namespace State
+
+namespace ClusterRevision {
+Protocols::InteractionModel::Status Get(EndpointId endpoint, uint16_t * value); // int16u
+Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value, MarkAttributeDirty markDirty);
+} // namespace ClusterRevision
+
+} // namespace Attributes
+} // Flame
+
+namespace Fire {
+namespace Attributes {
+
+namespace State {
+Protocols::InteractionModel::Status Get(EndpointId endpoint, DataModel::Nullable<chip::app::Clusters::Fire::StateEnum> & value); // FireStateEnum
+Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Fire::StateEnum value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, chip::app::Clusters::Fire::StateEnum value, MarkAttributeDirty markDirty);
+} // namespace State
+
+namespace ClusterRevision {
+Protocols::InteractionModel::Status Get(EndpointId endpoint, uint16_t * value); // int16u
+Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value);
+Protocols::InteractionModel::Status Set(EndpointId endpoint, uint16_t value, MarkAttributeDirty markDirty);
+} // namespace ClusterRevision
+
+} // namespace Attributes
+} // Fire
+
 namespace WindowCovering {
 namespace Attributes {
 
