@@ -68,6 +68,7 @@ public:
     kDeviceType_Thermostat        = 0x000D,
     kDeviceType_WindowCovering    = 0x000E,
     kDeviceType_AirPurifier       = 0x000F,
+    kDeviceType_Fire              = 0x0010,
     kDeviceType_Unspecified       = 0xFFFF
   };
 
